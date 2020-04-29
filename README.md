@@ -8,3 +8,5 @@ It's my first blog on flask
 Branches:
 
 1a - base app flask and requirements.txt
+
+1b - add infrastructure: static, css, templates.... 
