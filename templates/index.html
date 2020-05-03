@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>IT-блог Михаил Терехова</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-<h1>Hello, {{n}}</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+
+
+    {% block body %}
+<center><h1> Start page</h1></center>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ea nulla amet accusamus deserunt totam tempora fugit, similique dolore architecto ipsam earum aut nobis illo quia, repellendus ratione mollitia consequatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci, laudantium ex. Quidem quasi voluptas amet odit quia. Necessitatibus ad quo cum expedita. Voluptatem quae temporibus fugiat unde possimus in.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ea nulla amet accusamus deserunt totam tempora fugit, similique dolore architecto ipsam earum aut nobis illo quia, repellendus ratione mollitia consequatur?</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ea nulla amet accusamus deserunt totam tempora fugit, similique dolore architecto ipsam earum aut nobis illo quia, repellendus ratione mollitia consequatur?</p>
+    {% endblock %}
+
+

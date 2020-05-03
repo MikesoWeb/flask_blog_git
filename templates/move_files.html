@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+<body>
+    {% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class='move_files_form'>
+
+        <form action="/entry" method='post'>
+
+            <label for="ctrl">Откуда переместить:</label><br>
+            <!--        <input type="file" id="ctrl" webkitdirectory directory multiple/>-->
+            <input type="text" value="C:/Users/z/Desktop/img/" name='in'>
+            <br>
+            <label for="ctrl-r">Куда переместить:</label><br>
+            <!--        <input type="file" id="ctrl-r" webkitdirectory directory multiple/><br>-->
+            <input type="text" value="C:/Users/z/Desktop/move_files_img/" name="out">
+            <br>
+            <input type="submit" class='move_file_button'><br>
+        </form>
+
+
+    </div>
+
+    <br>
+
+    <p>Из папки <span class="in_files_span">{{path}}</span> в папку <span class="out_files_span">{{path2}}</span> были перемещены <span class="count_files_span">{{count}}</span> файла</p>
+
+
+
+    {% endblock %}
