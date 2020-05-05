@@ -14,7 +14,15 @@ def move_files():
     path2 = request.form['out']
     global i, full_path
     count = 0
-    extension_files = ['jpg', 'png', 'ico', 'svg', 'webp', 'gif']
+    extension_files = request.form['extension_field']
+
+    # если нет указанного пути, создать !
+    if  not os.path.exists(path):
+        os.makedirs(path)
+    # если нет указанного пути, создать !
+    if not os.path.exists(path2):
+        os.makedirs(path2)
+
     for i in sorted(os.listdir(path)):
 
         if (i.split('.')[-1]).lower() in extension_files:
